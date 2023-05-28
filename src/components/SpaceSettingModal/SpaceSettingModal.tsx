@@ -4,15 +4,12 @@ import styles from './SpaceSettingModal.less';
 import {SpaceType} from '@/enums/spacetype';
 import {LeftOutlined} from '@ant-design/icons';
 import {useEffect, useRef, useState} from 'react';
-import {Common as CourseCommon} from './Course/Common';
 import {Common as ColumnCommon} from './Column/Common/Common';
 import {Basic} from './Basic/Basic';
 import {Pay as CouresPay} from './Pay/Pay';
 import {useModel} from '@umijs/max';
 import {Options} from './Options/Options';
 import SpaceMembers from './SpaceMembers/SpaceMembers';
-
-// import { Pay as CouresPay } from './Course/Pay';
 
 interface SpaceSetting {
   spaceGuid: string;
@@ -97,18 +94,11 @@ interface FormRef {
 }
 const SpaceSettingModal = (prop: SpaceSetting) => {
   const { visible, onClose, spaceGuid, count } = prop;
-  // console.log(cases)
   const { spaceMap } = useModel('community');
   const spaceInfo = spaceMap.get(spaceGuid);
   const modalRef = useRef<FormRef>();
   const [settingPage, setSettingPage] = useState<string>();
 
-  // useEffect(() => {
-  //   if (!spaceInfo) {
-  //     return;
-  //   }
-  //   setSettingPage(SettingPageMap[spaceInfo.spaceType][0].value);
-  // }, [spaceInfo]);
   useEffect(() => {
     if (!spaceInfo) {
       return;
