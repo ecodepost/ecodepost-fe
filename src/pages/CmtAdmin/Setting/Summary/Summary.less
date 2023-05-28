@@ -1,0 +1,287 @@
+.sum {
+  width: calc(440px + 32px * 2);
+  padding: 25px 32px 32px 32px;
+  overflow-y: scroll;
+  background: #fff;
+  margin: 20px auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(228, 231, 235);
+
+  :global {
+    .ant-input-group,
+    .ant-input {
+      height: 100%;
+    }
+
+    .ant-input-group-addon {
+      background-color: #fff;
+      border: 1px solid var(--theme-color-input-border);
+      border-left: 0;
+      border-radius: 8px;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+
+    .ant-input {
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .sum_ava {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+
+    .sum_ava_action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .sum_ava_action_btn {
+        width: 96px;
+        height: 32px;
+        border: 1px solid var(--theme-color-input-border);
+        border-radius: 4px;
+
+        & > span {
+          color: var(--themeColorButtonText);
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 24px;
+        }
+      }
+
+      & > span {
+        margin-top: 12px;
+        color: var(--theme-color-nav);
+        font-weight: 400;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .sum_name {
+    display: flex;
+    flex-direction: column;
+
+    .sum_name_input {
+      width: 440px;
+      height: 48px;
+      margin-top: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+  }
+
+  .sum_url {
+    margin-top: 20px;
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+
+    .sum_url_input {
+      width: 440px;
+      height: 48px;
+      margin-top: 8px;
+    }
+
+    .sum_url_action {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+
+      & > span {
+        color: var(--themeColorStatus);
+        font-weight: 400;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 17px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sum_visible {
+    margin-top: 20px;
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+
+    .sum_visible_radio {
+      display: flex !important;
+      justify-content: space-between;
+      margin-top: 8px;
+
+      :global {
+        .ant-radio-button-wrapper {
+          width: 136px;
+          height: 48px !important;
+          border-left-width: 1px;
+          border-radius: 8px !important;
+        }
+
+        .ant-radio-button-wrapper:not(:first-child)::before {
+          display: none !important;
+        }
+
+        .ant-radio-button-wrapper span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .sum_visible_tip {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 12px;
+
+      .sum_visible_tip_icon {
+        color: var(--theme-color-warning);
+        font-size: 14px;
+      }
+
+      .sum_visible_tip_text {
+        margin-left: 5px;
+        color: var(--theme-color-warning);
+        font-weight: 400;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .sum_etc {
+    margin-top: 20px;
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+
+    .sum_etc_action {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 13px;
+
+      .sum_etc_action_text {
+        color: var(--themeColorButtonText);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .sum_edition {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+  }
+
+  .sum_action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 29px;
+
+    .sum_action_btn {
+      width: 96px;
+      height: 48px;
+      background: var(--themeColorPrimary);
+      border-radius: 8px;
+
+      & > span {
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.prefix {
+  margin-left: 5px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 22px;
+}
+
+.verticalDiv {
+  width: 1px;
+  height: 20px;
+  background: var(--theme-color-input-border);
+}
+
+.modal {
+  :global {
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+}

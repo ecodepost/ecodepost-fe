@@ -1,0 +1,206 @@
+.modalMask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  overflow: auto;
+  background-color: #000000cc;
+  outline: none;
+}
+.modal {
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  :global {
+    .ant-modal-wrap {
+      width: 100vw !important;
+    }
+    .ant-modal-close {
+      display: block !important;
+    }
+    .ant-modal-content {
+      height: auto !important;
+    }
+
+    .ant-modal-footer {
+      display: none !important;
+    }
+
+    .ant-modal-body {
+      margin-top: 50%;
+      padding-bottom: 24px !important;
+      border-radius: 10px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+
+    & > h1 {
+      align-self: center;
+    }
+
+    .input {
+      align-self: center;
+      background: #fff;
+
+      .InputBox {
+        width: 400px;
+        height: 48px;
+        border-radius: 8px;
+        :global {
+          .ant-select-selector {
+            width: 330px;
+            height: 100%;
+            border: 1px solid var(--theme-color-input-border) !important;
+            border-radius: 8px !important;
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    margin-bottom: 24px;
+  }
+  .footer {
+    margin-bottom: 20px;
+  }
+  .banner,
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    .switch {
+      align-self: center;
+    }
+    & > Button {
+      width: 100px;
+      height: 48px;
+      margin-left: 38px;
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: 8px;
+    }
+    .checkbox {
+      align-self: center;
+    }
+    .content_select {
+      width: 120px;
+      height: 48px;
+      :global {
+        .ant-select-selector {
+          height: 48px;
+          border: 1px solid var(--theme-color-input-border);
+          border-radius: 8px;
+        }
+
+        .ant-select-selection-item,
+        .ant-select-selection-placeholder {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.list {
+  width: 634px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 32px;
+  overflow-y: scroll;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  .list_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & > Button {
+      padding-right: 18px;
+      padding-left: 18px;
+      font-weight: 500;
+      font-size: 12px;
+      border-radius: 8px;
+    }
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 18px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 25px;
+    }
+  }
+  .list_content {
+    margin-top: 12px;
+    :global {
+      .ant-table-cell {
+        background: #fff;
+      }
+    }
+    .list_content_input {
+      width: 320px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+    .list_content_name {
+      margin-left: 12px;
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+    }
+    .list_content_logintime,
+    .list_content_jointime {
+      color: var(--themeColorButtonText);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+    }
+  }
+}
+
+.actionMenu {
+  width: 128px;
+  height: 80px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.12);
+  :global {
+    .ant-dropdown-menu {
+      height: 100%;
+      padding: 8px 8px;
+      box-shadow: none;
+    }
+    .ant-dropdown-menu-item {
+      height: 32px;
+    }
+    .ant-dropdown-menu-item:hover,
+    .ant-dropdown-menu-submenu-title:hover,
+    .ant-dropdown-menu-item.ant-dropdown-menu-item-active,
+    .ant-dropdown-menu-item.ant-dropdown-menu-submenu-title-active,
+    .ant-dropdown-menu-submenu-title.ant-dropdown-menu-item-active,
+    .ant-dropdown-menu-submenu-title.ant-dropdown-menu-submenu-title-active {
+      background-color: var(--themeColorBackground);
+    }
+  }
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

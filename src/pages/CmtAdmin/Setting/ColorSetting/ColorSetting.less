@@ -1,0 +1,208 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 32px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border: solid 1px #f9f9f9;
+  border-radius: 8px;
+  .container_sidebar {
+    height: 100%;
+    background-color: #223347;
+  }
+  .container_cmtsidebar {
+    width: 360px;
+    background-color: var(--preThemeColorBackground);
+    border-right: var(--preThemeColorBackground) solid 1px;
+    .container_header_icon {
+      margin-right: 24px;
+    }
+    .container_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 250px;
+      height: 64px;
+      margin-left: 5px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--preThemeColorBackground);
+      cursor: pointer;
+      .container_header_logo {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        font-size: 24px;
+        line-height: 32px;
+        background-color: var(--preThemeColorPrimary);
+        border-radius: 8px;
+      }
+
+      .container_header_text {
+        display: inline-block;
+        margin-left: 8px;
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.container_content_search,
+.container_content_mainActive {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px;
+  cursor: pointer;
+
+  .container_content_icon {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .container_content_text {
+    margin-left: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.container_content_mainActive {
+  width: 100%;
+  color: #fff;
+  background-color: var(--preThemeColorStatus);
+}
+.container_content_search {
+  margin: 5px 10px 20px 10px;
+  border: 2px solid var(--theme-card-border);
+  border-radius: 8px;
+}
+.container_content_group {
+  height: 480px;
+}
+.divUserBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+  margin-top: auto;
+  margin-bottom: 5px;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-top: 1px solid rgba(228, 233, 240, 1);
+}
+.avatarUnfold {
+  display: flex;
+  align-items: center;
+  margin-left: -35px;
+  transform: scale(0.8);
+  .active {
+    background-color: var(--preThemeColorPrimary);
+  }
+  .UserNickname {
+    max-width: 128px;
+    padding-left: 3px;
+    overflow: hidden;
+    color: #3e3747;
+    font-weight: 500;
+  }
+}
+.iNotifyIconUnfold {
+  display: inline-block;
+  align-self: center;
+  margin-right: 20px;
+  color: var(--theme-color-nav);
+  font-size: 23px;
+}
+.container_content {
+  width: 100%;
+  //flex: 1;
+  background-color: #f9f9f9;
+}
+.container_content_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #fff;
+}
+.container_content_top_title {
+  flex: 1;
+}
+.container_content_top_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container_content_top_icons {
+  padding-left: 5px;
+}
+.container_content_right {
+  display: flex;
+  flex: 1;
+  height: 40px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid var(--theme-card-border);
+  border-radius: 8px;
+}
+.avatarIcon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.avatarIcon_span {
+  margin-left: 10px;
+  font-weight: 700;
+  line-height: 15px;
+}
+.card {
+  padding: 10px 25px;
+  overflow-y: auto;
+}
+.container_content_group {
+  padding: 4px 22px 22px 29px;
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+.drag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+  .title,
+  .title1 {
+    margin-left: 12px;
+    color: var(--themeColorButtonText);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .title {
+    padding-right: 55px;
+  }
+  .title1 {
+    padding-right: 70px;
+  }
+}
+.emojiIcon {
+  padding-top: 12px;
+  .emojiIcon_title {
+    margin-left: 12px;
+    color: var(--preThemeColorButtonText);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

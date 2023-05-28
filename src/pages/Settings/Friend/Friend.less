@@ -1,0 +1,72 @@
+.friend {
+  width: calc(400px + 32px * 2);
+  padding: 32px 32px;
+  .friend_title {
+    color: var(--themeColorButtonText);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+  .friend_item {
+    margin: 20px 0;
+    .friend_item_switch {
+      display: flex;
+      justify-content: space-between;
+      & > span {
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 22px;
+      }
+    }
+    .friend_item_desc {
+      display: block;
+      margin-top: 8px;
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 17px;
+    }
+  }
+  .divider {
+    height: 1px;
+    background: #eceff4;
+  }
+  .friend_item_switch_group {
+    margin-top: 12px;
+    .friend_item_switch_group_item {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 0;
+      & > span {
+        color: var(--themeColorButtonText);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+      }
+    }
+  }
+  .friend_submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    .friend_submit_btn {
+      width: 128px;
+      height: 48px;
+      background: var(--themeColorPrimary);
+      border-radius: 8px;
+
+      & > span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

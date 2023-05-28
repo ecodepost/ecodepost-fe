@@ -1,0 +1,74 @@
+.container {
+  padding-top: 32px;
+
+  .body {
+    width: 634px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 24px 32px;
+    background: #ffffff;
+    border: 1px solid #eceff4;
+    border-radius: 8px;
+
+    .title {
+      padding-bottom: 20px;
+      color: #28354a;
+      font-weight: 700;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 28px;
+    }
+  }
+}
+
+.content_name {
+  .content_text {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: var(--themeColorButtonText);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .cardPrivacySelectGroup {
+    display: flex !important;
+
+    .cardPrivacySelectGroupBtn {
+      width: 100% !important;
+      height: 48px !important;
+      margin: auto;
+      border-radius: 8px !important;
+
+      & > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 22px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+
+    :global {
+      .ant-radio-button-wrapper:not(:first-child)::before {
+        display: none;
+      }
+
+      .ant-radio-button-wrapper {
+        border-left-width: 1px;
+      }
+    }
+  }
+
+  .content_tip {
+    display: inline-block;
+    margin-top: 4px;
+  }
+}

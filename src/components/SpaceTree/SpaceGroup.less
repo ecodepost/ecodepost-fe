@@ -1,0 +1,223 @@
+.sub_tree_drop_hover_after {
+  border-bottom: 1px solid #327bee;
+}
+
+.sub_tree_drop_hover_before {
+  border-top: 1px solid #327bee;
+}
+
+.sub_tree {
+  background-color: var(--themeColorBackground);
+
+  .sub_tree_title {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-right: 26px;
+    padding-left: 26px;
+
+    color: #28354a;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 32px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s, visibility 0s;
+
+    .toolIcons {
+      display: flex;
+      align-items: center;
+      opacity: 0;
+    }
+
+    &:hover {
+      background-color: #eee;
+
+      .toolIcons {
+        opacity: 1;
+      }
+    }
+
+    .container_content_icon {
+      margin-left: 1px;
+      font-weight: 600;
+      font-size: 10px;
+    }
+
+    .node_title {
+      width: 150px;
+      margin-left: 12px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    //.tree_item_active{
+    //  color:#fff;
+    //}
+    .node_title:extend(.flex-between) {
+      flex: 1;
+    }
+
+    .tree_icon {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .title_icon {
+      color: #6f7b91;
+    }
+  }
+
+  .sub_tree_title_active {
+    color: #fff !important;
+    background-color: var(--themeColorStatus);
+
+    .title_icon {
+      color: #fff;
+    }
+    &:hover {
+      background-color: var(--themeColorPrimary);
+    }
+  }
+
+  &.sub_tree_drop_hovering {
+    background-color: #e9f4fd;
+  }
+
+  .sub_tree_wrapper {
+    background-color: var(--themeColorBackground);
+
+    .create_space_item {
+      height: 40px;
+      margin: 0 20px;
+      margin: 0 20px;
+      margin-top: 16px;
+      padding-right: 30px;
+      padding-left: 26px;
+      line-height: 40px;
+      background-color: var(--themeColorBackground);
+      border: 1px dotted var(--theme-color-input-border);
+      border: 1px dotted var(--theme-color-input-border);
+      border-radius: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s, visibility 0s;
+
+      .node_title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: var(--tree-indent-length);
+      }
+    }
+
+    .create_space_item:hover {
+      background-color: #eee;
+    }
+  }
+
+  .sub_tree_title_arrow {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+
+    > i {
+      transform: rotate(-90deg);
+      transition: transform ease 200ms;
+    }
+  }
+}
+
+.subTreeOpen {
+  .sub_tree_wrapper {
+    display: block;
+  }
+
+  .sub_tree_title_arrow {
+    > i {
+      transform: rotateX(0) !important;
+    }
+  }
+}
+
+.subTreeClose {
+  .sub_tree_wrapper {
+    display: none;
+  }
+}
+
+.addIcon {
+  margin-left: 8px;
+}
+
+.dropDownContainer {
+  width: 216px;
+  padding: 12px 12px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #dde0e2;
+  }
+}
+
+.item_text {
+  margin-left: 8px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.item_text_delete {
+  margin-left: 8px;
+  color: red;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: line-through;
+}
+
+.popover {
+  :global {
+    .ant-popover-open {
+      color: #fff !important;
+    }
+
+    .ant-popover-content {
+      .ant-popover-arrow-content::before {
+        background: var(--theme-color-title);
+      }
+
+      .ant-popover-inner .ant-popover-inner-content {
+        color: white !important;
+      }
+    }
+
+    .ant-popover-inner-content {
+      // padding: 0 0;
+    }
+
+    .ant-popover-inner {
+      border-radius: 8px;
+    }
+
+    .ant-popover {
+      position: absolute !important;
+      top: -300px !important;
+      left: 0 !important;
+    }
+  }
+}

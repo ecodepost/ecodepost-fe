@@ -1,0 +1,283 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-color: #f9f9f9;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 822px;
+  margin: auto;
+  overflow-y: scroll;
+  background-color: #fff;
+  border: 1px solid rgb(228, 231, 235);
+  border-radius: 8px;
+}
+
+.content_main {
+  width: 100%;
+  padding: 20px;
+}
+
+.detail:hover {
+  .setting {
+    opacity: 1;
+  }
+}
+
+.content_toc {
+  position: fixed;
+  right: 0px;
+  width: calc(149px - 32px);
+  background-color: white;
+}
+
+.toc {
+  margin: 32px 0;
+  border-left: #eceff4 solid 1px;
+
+  :global {
+    .ant-anchor {
+      padding-left: 0;
+    }
+
+    .ant-anchor-link {
+      padding: 0 0;
+    }
+
+    .ant-anchor-ink::before {
+      display: none;
+    }
+
+    .toc_item_title {
+      margin-left: 19px;
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+      cursor: pointer;
+    }
+
+    .ant-anchor-link-active {
+      border-left: var(--themeColorPrimary) solid 4px;
+
+      .toc_item_title {
+        margin-left: 15px;
+        color: var(--themeColorStatus);
+      }
+    }
+  }
+}
+
+.toc_item {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.title {
+  display: block;
+  margin-top: 30px;
+  color: #28354a;
+  font-weight: 400;
+  font-size: 28px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 40px;
+}
+
+.emojibar {
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.innercontent {
+  p {
+    color: var(--theme-color-title);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  :global {
+    .ql-syntax {
+      white-space: normal;
+      word-break: break-all;
+    }
+  }
+}
+
+.sidebar_box {
+  width: 220px;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 999;
+  width: 220px;
+  height: calc(100% - 64px);
+  padding: 20px 0;
+  overflow-y: scroll;
+  background-color: #fff;
+  border-right: var(--theme-color-divider) solid 1px;
+}
+
+.sidebar_btn {
+  width: 106px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.sidebar_content {
+  padding: 0 20px;
+}
+
+.sidebar_content_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar_content_title {
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sidebar_content_btn {
+  display: flex;
+  align-items: center;
+  width: 75px;
+  height: 29px;
+  border-radius: 8px;
+}
+
+.sidebar_content_btn_icon {
+  font-size: 10px;
+}
+
+.sidebar_content_btn_text {
+  margin-left: 2px !important;
+  font-weight: 600;
+  font-size: 10px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 24px;
+}
+
+.sidebar_content_icon {
+  color: #718096;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sidebar_content_divider {
+  height: 1px;
+  margin: 6px 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+
+  :global {
+    .ant-popover-arrow {
+      display: none !important;
+    }
+
+    .ant-popover-inner-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+.info_author {
+  margin-left: 8px;
+  color: var(--theme-color-nav);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.info_time {
+  margin-left: 8px;
+  color: var(--theme-color-nav);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.outer {
+  color: var(--theme-color-nav);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+
+  .outer_icon {
+    margin-right: 5px;
+    font-size: 13px;
+  }
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+
+  &:hover {
+    color: var(--themeColorPrimary);
+  }
+}
+
+.popover {
+  width: 128px;
+  height: calc(112px + 1px);
+  padding: 8px;
+}
+
+.popover_item {
+  display: flex;
+  align-items: center;
+  width: 112px;
+  height: 32px;
+  cursor: pointer;
+
+  & > span {
+    margin: 5px 0 5px 8px;
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  &:hover {
+    background: var(--themeColorBackground);
+
+    & > span {
+      color: var(--themeColorButtonText);
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  background: var(--theme-color-divider);
+}
+
+.headimage {
+  margin-top: 20px;
+}
+
+.bottom_bar {
+  padding-top: 8px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 32px;
+  overflow: hidden;
+  background: white;
+  border-bottom: 1px solid #eceff4;
+  opacity: 1;
+
+  .back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    .back_icon {
+      font-size: 12px;
+    }
+
+    .back_test {
+      display: inline-block;
+      margin-left: 12px;
+      color: #28354a;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+  }
+}

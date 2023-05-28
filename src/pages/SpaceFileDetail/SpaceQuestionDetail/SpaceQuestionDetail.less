@@ -1,0 +1,138 @@
+.detail {
+  height: 100vh;
+  padding-top: 64px;
+  overflow-y: scroll;
+}
+
+.question {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #fff;
+
+  .question_header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 822px;
+    margin: auto;
+    padding: 16px 0;
+
+    .question_header_content {
+      .question_header_title {
+        margin-top: 12px;
+        margin-bottom: 4px;
+        color: #121212;
+        font-weight: 600;
+
+        font-size: 22px;
+        line-height: 32px;
+        font-synthesis: style;
+      }
+    }
+
+    .question_header_footer {
+      margin-top: 12px;
+
+      .write_answer_btn {
+        width: 106px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid var(--themeColorPrimary);
+        border-radius: 8px;
+
+        .write_answer_icon {
+          width: 14px;
+          height: 14px;
+          margin-right: 8px;
+          color: var(--themeColorPrimary);
+        }
+
+        .write_answer_txt {
+          color: var(--themeColorPrimary);
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.answer_editor {
+  position: relative;
+  max-width: 822px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+
+  :global {
+    .plate_editor {
+      & > div {
+        & > div:nth-child(2) {
+          min-height: 400px !important;
+          padding: 20px 0px;
+        }
+      }
+    }
+
+    .slate-HeadingToolbar {
+      position: sticky;
+      top: 0px;
+      z-index: 99;
+      background-color: white;
+      opacity: 1;
+    }
+  }
+
+  .answer_editor_footer {
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 64px;
+    padding: 0px 20px;
+    background-color: white;
+    border-top: 1px solid #e8e8e8;
+
+    .answer_editor_footer_btn {
+      width: 106px;
+      height: 40px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.answer {
+  max-width: 822px;
+  margin: auto;
+  margin-bottom: 20px;
+
+  .answer_header {
+    margin-bottom: 12px;
+    padding: 12px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 8px;
+  }
+
+  .answer_empty {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .start_answer {
+      display: inline-block;
+      color: var(--themeColorPrimary);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.setting {
+  height: calc(100vh - 64px);
+  padding: 20px 32px;
+  background: #f9f9f9;
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+    .ant-tabs-tab {
+      padding: 0 0 7px 0;
+    }
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .ant-modal-body {
+      padding: 0 0;
+    }
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+  }
+  .super {
+    border: 1px solid rgb(228, 231, 235);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    .superTitle {
+      & > span {
+        color: var(--theme-color-nav);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+      }
+    }
+    .superAction {
+      margin-top: 12px;
+      .superActionBtn {
+        width: 146px;
+        height: 40px;
+        border: 1px solid var(--themeColorPrimary);
+        border-radius: 8px;
+
+        & > span {
+          color: var(--themeColorStatus);
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+      }
+    }
+    .superTable {
+      margin-top: 4px;
+    }
+  }
+  .admin {
+    .adminTitle {
+      margin-top: 12px;
+      & > span {
+        color: var(--theme-color-nav);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+      }
+    }
+    .adminAction {
+      margin-top: 12px;
+      .adminActionBtn {
+        width: 118px;
+        height: 40px;
+        border: 1px solid var(--themeColorPrimary);
+        border-radius: 8px;
+
+        & > span {
+          color: var(--themeColorStatus);
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+      }
+    }
+    .adminTable {
+      margin-top: 4px;
+    }
+  }
+}
+
+.table_name {
+  margin-left: 12px;
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 24px;
+}
+.table_phone,
+.table_email {
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 22px;
+}
+.table_action {
+  .table_action_btn {
+    width: 146px;
+    height: 40px;
+    border: 1px solid var(--theme-color-input-border);
+    border-radius: 8px;
+    & > span {
+      color: #19283b;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+    }
+  }
+  .table_action_btn_left {
+    width: 104px;
+    height: 40px;
+    border: 1px solid var(--theme-color-input-border);
+    border-radius: 8px;
+    & > span {
+      color: #19283b;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+    }
+  }
+  .table_action_btn_right {
+    width: 118px;
+    height: 40px;
+    margin-left: 16px;
+    border: 1px solid var(--theme-color-input-border);
+    border-radius: 8px;
+    & > span {
+      color: #19283b;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+    }
+  }
+}

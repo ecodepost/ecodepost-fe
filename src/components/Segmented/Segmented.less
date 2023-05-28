@@ -1,0 +1,45 @@
+.container {
+  :global {
+    .ant-segmented {
+      width: 100%;
+      height: 48px;
+      background-color: white;
+    }
+    .ant-segmented-group {
+      justify-content: space-between;
+    }
+    .ant-segmented-item,
+    .ant-segmented-item-selected,
+    .ant-segmented-thumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 48px;
+      // background-color: var(--theme-color-divider);
+      background-color: white;
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+      box-shadow: none;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+    .ant-segmented-item-selected {
+      background-color: white;
+      border: 1px solid var(--themeColorPrimary);
+    }
+    .ant-segmented-item-selected .ant-segmented-item-label {
+      color: var(--themeColorPrimary);
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .ant-segmented-thumb {
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid var(--themeColorPrimary);
+    }
+    .ant-segmented:not(.ant-segmented-disabled):hover,
+    .ant-segmented:not(.ant-segmented-disabled):focus {
+      background-color: white;
+    }
+  }
+}

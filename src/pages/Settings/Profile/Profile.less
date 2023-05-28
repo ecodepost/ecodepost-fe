@@ -1,0 +1,190 @@
+.profile {
+  width: calc(400px + 32px * 2);
+  margin: auto;
+  padding: 32px 32px;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+  .profile_wechat {
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    .githubText {
+      display: inline-block;
+      margin-left: 12px;
+    }
+  }
+
+  .profile_avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .profile_avatar_title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_avatar_btn {
+      width: 96px;
+      height: 32px;
+      margin-left: 20px;
+      background: #fff;
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 4px;
+      & > span {
+        width: 56px;
+        height: 24px;
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+  .profile_nickname {
+    margin-top: 20px;
+    .profile_nickname_title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_nickname_subtitle {
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_nickname_input {
+      width: 400px;
+      height: 48px;
+      margin-top: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+  }
+  .profile_gender {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    .profile_gender_title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_gender_select {
+      :global {
+        .ant-select-selector {
+          display: flex;
+          align-items: center;
+          width: 400px;
+          height: 48px;
+          margin-top: 8px;
+          background: white;
+          border: 1px solid var(--theme-color-input-border);
+          border-radius: 8px;
+        }
+        .ant-select-arrow {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+  .profile_birth {
+    margin-top: 20px;
+    .profile_birth_title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_birth_picker {
+      width: 400px;
+      height: 48px;
+      margin-top: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+  }
+  .profile_tag {
+    margin-top: 20px;
+    .profile_tag_title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_tag_subtitle {
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_tag_input {
+      width: 400px;
+      height: 48px;
+      margin-top: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+  }
+  .profile_intro {
+    margin-top: 20px;
+    .profile_tag_title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .profile_tag_input {
+      width: 400px;
+      height: 100px;
+      margin-top: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+      :global {
+        .ant-input {
+          border: 1px solid rgba(255, 255, 255, 0);
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .profile_submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    .profile_submit_btn {
+      width: 128px;
+      height: 48px;
+      background: var(--themeColorPrimary);
+      border-radius: 8px;
+
+      & > span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

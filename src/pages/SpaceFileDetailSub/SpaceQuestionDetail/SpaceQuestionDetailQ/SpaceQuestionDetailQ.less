@@ -1,0 +1,87 @@
+.detail_qs {
+  margin-top: 20px;
+  padding: 32px;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+
+  .detail_qs_title {
+    color: var(--themeColorButtonText);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+
+  .detail_qs_content {
+    margin-top: 9px;
+
+    .detail_qs_content_expand_text {
+      color: var(--themeColorStatus);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+
+    .detail_qs_content_expand_icon {
+      width: 9px;
+      height: 5px;
+    }
+
+    .detail_qs_content_expand_html {
+      max-width: 100%;
+
+      /** 展开全部后的样式 */
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .detail_qs_action {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+
+    .detail_qs_action_btn {
+      width: 106px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid var(--themeColorPrimary);
+      border-radius: 8px;
+
+      .detail_qs_action_icon {
+        width: 14px;
+        height: 14px;
+        color: var(--themeColorPrimary);
+      }
+
+      .detail_qs_action_text {
+        color: var(--themeColorPrimary);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    .detail_qs_action_item {
+      margin-left: 25px;
+      cursor: pointer;
+
+      .detail_qs_action_item_icon,
+      & > span {
+        color: var(--theme-color-nav);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      & > span {
+        margin-left: 3px;
+      }
+    }
+  }
+}

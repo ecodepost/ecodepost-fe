@@ -1,0 +1,26 @@
+.content {
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+  :global {
+    .ant-radio-button-wrapper {
+      border: none !important;
+      border-left-width: 0 !important;
+    }
+    .ant-radio-button-checked {
+      border: var(--themeColorPrimary) 1px solid;
+    }
+  }
+}
+
+.modalInternal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  .modalInternalBtn {
+    border-radius: 4px;
+  }
+  & > span {
+    color: #28354A;
+  }
+}

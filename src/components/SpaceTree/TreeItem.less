@@ -1,0 +1,122 @@
+.emojiIcon {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+}
+
+.emojiIcon:hover,
+.emojiIcon:active {
+  background-color: #cfcfcd;
+  border-radius: 2px;
+}
+
+.tree_item_hover_after {
+  border-bottom: 1px solid #327bee;
+}
+
+.tree_item_hover_before {
+  border-top: 1px solid #327bee;
+}
+
+.tree_item {
+  height: 40px;
+  padding-right: 20px;
+  color: var(--themeColorButtonText);
+  color: #6f7b91;
+  line-height: 40px;
+  background-color: var(--themeColorBackground);
+  cursor: pointer;
+  transition: all 0.3s, visibility 0s;
+  .node_title {
+    display: flex;
+    flex-direction: row;
+    margin-left: var(--tree-indent-length);
+    overflow: hidden;
+    .toolIcons {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      opacity: 0;
+
+      .tree_item_icon {
+        &:hover {
+          background-color: rgba(221, 224, 226, 0.5);
+        }
+      }
+    }
+  }
+
+  .node_title:extend(.flex-between) {
+    > div {
+      max-width: 180px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &:hover {
+    background-color: #eee;
+
+    .toolIcons {
+      opacity: 1;
+    }
+  }
+}
+
+.tree_item_active {
+  color: #fff !important;
+  background-color: var(--themeColorStatus);
+
+  &:hover {
+    background-color: var(--themeColorPrimary);
+  }
+}
+
+.emojiIcon_active {
+  color: white;
+}
+.actionIcon {
+  font-size: 16px;
+}
+.popover {
+  :global {
+    .ant-popover-open {
+      color: #fff !important;
+    }
+
+    .ant-popover-content {
+      .ant-popover-arrow-content::before {
+        background: var(--theme-color-title);
+      }
+
+      .ant-popover-inner .ant-popover-inner-content {
+        color: white !important;
+      }
+    }
+
+    .ant-popover-inner-content {
+      // padding: 0 0;
+    }
+
+    .ant-popover-inner {
+      border-radius: 8px;
+    }
+
+    .ant-popover {
+      position: absolute !important;
+      top: -300px !important;
+      left: 0 !important;
+    }
+  }
+}
+
+.flex_column_center {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+
+  .item_title {
+    margin-left: 8px;
+  }
+}

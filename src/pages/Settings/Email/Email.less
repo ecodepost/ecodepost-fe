@@ -1,0 +1,98 @@
+.email {
+  width: calc(332px + 32px * 2);
+  padding: 32px 32px;
+  .email_item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    .email_item_text {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .email_item_input {
+      width: 332px;
+      height: 48px;
+      margin-top: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+  }
+  .email_item_captcha {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      .email_item_captcha_input {
+        width: 200px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--theme-color-input-border);
+        border-radius: 8px;
+      }
+      .email_item_captcha_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 46px;
+        background-color: #e6e9f1;
+        & > span {
+          color: #46689f;
+          font-weight: 400;
+          font-size: 24px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+  .email_tip {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    .email_tip_icon {
+      width: 14px;
+      height: 14px;
+      margin-top: 2px;
+      color: var(--theme-color-nav);
+    }
+    .email_tip_text {
+      margin-left: 5px;
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 17px;
+    }
+  }
+  .email_submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    .email_submit_btn {
+      width: 128px;
+      height: 48px;
+      background: var(--themeColorPrimary);
+      border-radius: 8px;
+
+      & > span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

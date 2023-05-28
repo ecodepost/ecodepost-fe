@@ -1,0 +1,139 @@
+.container_big_width {
+  width: calc(216px + 68px) !important;
+}
+
+.container {
+  z-index: 9999999;
+  width: 216px;
+  padding: 12px 12px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+
+  :global {
+    .ant-popover-inner-content {
+      padding: 0px !important;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #dde0e2;
+  }
+}
+
+.item_text {
+  margin-left: 8px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.item_editionName {
+  display: inline-block;
+  padding: 2px 8px;
+  color: rgba(2, 185, 83, 1);
+  font-weight: 500;
+  font-size: 12px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  background-color: rgba(3, 207, 93, 0.15);
+  border-radius: 4px;
+}
+
+.item_icon {
+  margin-right: 8px;
+  color: var(--theme-color-nav);
+  font-size: 13px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 4px 0;
+  border-top: 1px solid var(--theme-color-divider);
+}
+
+.modal {
+  :global {
+    .ant-modal-content {
+      border-radius: 8px !important;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+}
+
+.privacySetting {
+  padding: 24px 40px 40px 40px;
+
+  .privacySetting_title {
+    & > span {
+      color: #19283b;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 28px;
+    }
+  }
+
+  .privacySetting_subtitle {
+    margin-top: 4px;
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+  }
+
+  .privacySetting_divider {
+    height: 1px;
+    margin-top: 12px;
+    border-top: 1px solid var(--theme-color-input-border);
+  }
+
+  .privacySetting_setting {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+    }
+  }
+
+  .privacySetting_action {
+    display: flex;
+    justify-content: flex-end;
+
+    .privacySetting_action_btn {
+      width: 96px;
+      height: 48px;
+      margin-top: 41px;
+      background: var(--themeColorPrimary);
+      border-radius: 8px;
+
+      & > span {
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

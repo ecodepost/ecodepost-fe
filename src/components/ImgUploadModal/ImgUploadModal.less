@@ -1,0 +1,131 @@
+.img {
+  padding: 28px 0 32px 0;
+  :global {
+    .ant-tabs-tab {
+      padding: 4px 0;
+    }
+    .ant-tabs-nav-wrap {
+      padding: 0 32px;
+    }
+    .ant-tabs-top > .ant-tabs-nav,
+    .ant-tabs-bottom > .ant-tabs-nav,
+    .ant-tabs-top > div > .ant-tabs-nav,
+    .ant-tabs-bottom > div > .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+    .ant-tabs-top > .ant-tabs-nav::before,
+    .ant-tabs-bottom > .ant-tabs-nav::before,
+    .ant-tabs-top > div > .ant-tabs-nav::before,
+    .ant-tabs-bottom > div > .ant-tabs-nav::before {
+      margin: 0 32px;
+    }
+    .ant-upload {
+      width: 100%;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 100%;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.imgsBox {
+  max-height: 340px;
+  margin: 20px 0;
+  padding: 0 32px;
+  overflow: hidden;
+  &:hover {
+    overflow: overlay;
+  }
+}
+
+.imgItem {
+  width: 100%;
+  height: 100px;
+  background-color: var(--theme-color-divider);
+  border-radius: 4px;
+}
+
+.imgAction {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.imgActionBtn {
+  width: 96px;
+  height: 48px;
+  border-radius: 8px;
+  &:not(:first-child) {
+    margin-left: 12px;
+  }
+  & > span {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+}
+
+.uploader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  padding-top: 32px;
+}
+
+.uploaderBtn {
+  min-width: 270px;
+  height: 40px;
+  padding: 0 16px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  & > span {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+}
+
+.emptyBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.imgItemBox {
+  position: relative;
+  width: 100%;
+}
+
+.chosenMask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.chosenIcon {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+  color: var(--themeColorPrimary);
+  font-size: 32px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}

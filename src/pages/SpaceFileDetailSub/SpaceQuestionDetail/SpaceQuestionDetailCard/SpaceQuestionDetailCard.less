@@ -1,0 +1,92 @@
+.card {
+  margin-bottom: 12px;
+  padding: 16px 20px;
+  background-color: white;
+  border-radius: 8px;
+
+  .card_header {
+    display: flex;
+    align-items: center;
+
+    .card_name {
+      margin-left: 12px;
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .card_content {
+    margin-top: 12px;
+    color: var(--themeColorButtonText);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    .card_content_expand_text {
+      color: var(--themeColorStatus);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+
+    .card_content_expand_icon {
+      width: 9px;
+      height: 5px;
+    }
+
+    .card_content_expand_html {
+      max-width: 100%;
+
+      /** 展开全部后的样式 */
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .card_time {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .card_emojibar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+
+    .card_emojibar_action {
+      display: flex;
+      flex-direction: row;
+
+      .card_emojibar_action_item {
+        display: flex;
+        align-items: center;
+        margin-left: 26px;
+        cursor: pointer;
+
+        .card_emojibar_action_item_icon {
+          color: var(--theme-color-nav);
+          font-size: 18px;
+        }
+
+        & > span {
+          margin-left: 8px;
+          color: var(--theme-color-nav);
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

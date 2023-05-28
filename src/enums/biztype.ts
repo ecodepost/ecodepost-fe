@@ -1,0 +1,16 @@
+export enum BizType {
+  INVALID = 0,
+  ARTICLE = 1,
+  QUESTION = 2,
+  ANSWER = 3,
+  ACTIVITY = 4,
+  COMMUNITY = 5,
+  SPACE = 6,
+  USER = 7,
+  GOOD = 8,
+  GOOD_SKU = 9,
+  QUESTIONANDANSWER = 10,
+  NEWS = 11,
+  COLUMN = 13,
+  DRIVER = 14,
+}

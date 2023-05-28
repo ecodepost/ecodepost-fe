@@ -1,0 +1,108 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header_btn {
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  & > span {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+}
+
+.icon {
+  display: block;
+  color: #6f7b91;
+  font-size: 20px;
+}
+
+.sub_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 32px;
+  background: white;
+  border-bottom: 1px solid #eceff4;
+  opacity: 1;
+
+  .header_select {
+    width: 240px;
+    height: 40px;
+    .header_select_btn_group {
+      display: flex !important;
+      flex-direction: row;
+      .header_select_btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 76px;
+        height: 40px !important;
+        font-weight: 600;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 22px;
+        border-radius: 8px;
+      }
+    }
+  }
+  :global {
+    .ant-segmented-item,
+    .ant-segmented-thumb {
+      height: 40px;
+    }
+    .ant-radio-button-wrapper:not(:first-child)::before {
+      display: none !important;
+    }
+    .ant-radio-button-wrapper {
+      border-left-width: 1px;
+    }
+
+    .ant-radio-button-wrapper {
+      border: none;
+    }
+
+    .ant-radio-button-wrapper-checked {
+      border: 1px solid var(--themeColorPrimary);
+    }
+  }
+
+  .avatar_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1px solid #cbd5e0;
+    border-radius: 16px;
+
+    .more {
+      color: #28354a;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 20px;
+    }
+
+    :global {
+      .ant-avatar-sm {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+      }
+
+      .ant-avatar {
+        border: none;
+      }
+
+      .ant-avatar-group .ant-avatar:not(:first-child) {
+        margin-left: -4px;
+      }
+    }
+  }
+}

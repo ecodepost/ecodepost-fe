@@ -1,0 +1,51 @@
+.content_status_input_group {
+  display: flex;
+  justify-content: center;
+  .content_status_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--theme-color-input-border);
+    border-radius: 8px 0 0 8px;
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  :global{
+    .ant-popover {
+      left: 0px !important;
+    }
+      .ant-popover-placement-bottomRight {
+        padding-top: 0px !important;
+      }
+    .ant-popover-arrow{
+      display: none !important;
+    }
+  }
+  .content_status_input {
+    height: 48px;
+  }
+  :global {
+    .ant-input-group-addon {
+      font-size: 20px;
+      border-top-left-radius: 8px !important;
+      border-bottom-left-radius: 8px !important;
+    }
+    .ant-input-group,
+    .ant-input-affix-wrapper {
+      height: 48px;
+    }
+    .ant-input-affix-wrapper {
+      border-top-right-radius: 8px !important;
+      border-bottom-right-radius: 8px !important;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

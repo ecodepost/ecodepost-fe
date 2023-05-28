@@ -1,0 +1,236 @@
+.popover {
+  position: relative;
+  width: 500px;
+  border-radius: 8px;
+
+  .container_content_text {
+    display: block;
+    padding: 12px 12px 0px 12px;
+  }
+
+  .message_content {
+    height: 500px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 0;
+      padding: 0px 12px;
+    }
+    .ant-divider {
+      margin-top: 12px;
+      margin-bottom: 0px;
+    }
+
+    .ant-tabs-tab {
+      margin-right: 26px;
+      margin-left: 0px;
+    }
+  }
+  .popover_footer {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 8px;
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+    //border-top: 1px solid var(--theme-color-divider);
+    cursor: pointer;
+  }
+  .popover_banner {
+    height: 400px;
+    overflow-y: auto;
+  }
+  .popover_banner::-webkit-scrollbar {
+    display: block;
+    background-color: #eeeeee;
+    border-radius: 5px;
+  }
+  .noMessage {
+    display: block;
+    padding: 16px 0;
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .replay {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--theme-color-divider);
+    cursor: pointer;
+
+    .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+      text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .nickName {
+      display: inline-block;
+      margin-right: 6px;
+      margin-left: 6px;
+      color: var(--themeColorStatus);
+    }
+
+    .title {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+      text-overflow: ellipsis;
+      text-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .time {
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 20px;
+      text-align: right;
+    }
+  }
+
+  .systemNotice {
+    &:first-child {
+      padding-top: 16px;
+    }
+
+    padding: 8px 0;
+    color: var(--themeColorButtonText);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+  }
+}
+
+.applyItem {
+  padding: 8px 12px;
+  border-bottom: var(--theme-color-divider) solid 1px;
+
+  .nickName {
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: 6px;
+    color: var(--themeColorStatus);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+    text-shadow: 0px 5px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  .time {
+    width: 100%;
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.applyItemTitleMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .applyItemTitleMainText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+}
+
+.applyItemAction {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.applyItemTitleMainTextName {
+  color: var(--theme-color-nav);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 20px;
+  text-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.applyItemTitleMainTextDesc {
+  margin-top: 2px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 22px;
+  text-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.applyItemActionBtn {
+  height: 30px;
+  border-radius: 4px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.modal {
+  :global {
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  & > span {
+    width: 100%;
+    color: #19283b;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 28px;
+  }
+  .modalInput {
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid var(--theme-color-input-border);
+    border-radius: 8px;
+  }
+  .modalAction {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 24px;
+    .modalActionBtn {
+      width: 96px;
+      height: 48px;
+      border-radius: 8px;
+    }
+  }
+}

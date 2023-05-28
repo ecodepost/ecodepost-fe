@@ -1,0 +1,33 @@
+/** /pages/CommunityWelcome */
+export default {
+  /** CommunityWelcome/CommunityWelcome */
+  'cmtWelcome.fetchHomeInfo.fail': '获取社区首页信息失败',
+  'cmtWelcome.fetchAdminInfo.fail': '获取管理员信息失败',
+  'cmtWelcome.logo.alt': '社区头像',
+  'cmtWelcome.medal.alreadyExist': '已运营',
+  'cmtWelcome.medal.days': '天',
+  'cmtWelcome.banner.placeholder': '设置社区 banner',
+  'cmtWelcome.banner.alt': '社区 banner',
+  'cmtWelcome.admin.title': '社区管理团队',
+  'cmtWelcome.summary': '精选概览',
+  /** CommunityWelcome/BannerModal */
+  'cmtWelcome.bannerModal.update.loading.error': '请等待图片上传完成后更新',
+  'cmtWelcome.bannerModal.update.success': 'Banner信息更新成功',
+  'cmtWelcome.bannerModal.update.fail': 'Banner信息更新失败',
+  'cmtWelcome.bannerModal.img.upload.type': '只能上传jpeg/png格式的图片',
+  'cmtWelcome.bannerModal.img.upload.size': '图片大小不能超过5MB',
+  'cmtWelcome.bannerModal.img.upload.success': '图片上传成功',
+  'cmtWelcome.bannerModal.title': '设置社区banner',
+  'cmtWelcome.bannerModal.img.alt': '上传的社区图片',
+  'cmtWelcome.bannerModal.img.upload.change': '更换图片',
+  'cmtWelcome.bannerModal.img.upload.clear': '清除图片',
+  'cmtWelcome.bannerModal.img.upload.add': '添加图片',
+  'cmtWelcome.bannerModal.title.title': '输入标题',
+  'cmtWelcome.bannerModal.title.tip': '（不超过 20 个字符）',
+  'cmtWelcome.bannerModal.title.validate': '请输入标题',
+  'cmtWelcome.bannerModal.title.placeholder': '例：欢迎加入该社区~',
+  'cmtWelcome.bannerModal.content.title': '输入内容~',
+  'cmtWelcome.bannerModal.content.tip': '（不超过 100 个字符）',
+  'cmtWelcome.bannerModal.content.validate': '请输入内容',
+  'cmtWelcome.bannerModal.content.placeholder': '介绍一下您的社区，或简要描述社区提供的内容',
+};

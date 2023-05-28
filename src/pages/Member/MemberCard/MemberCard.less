@@ -1,0 +1,79 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid var(--theme-color-divider);
+}
+
+.card_main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  .card_main_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .nickname {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .role {
+      height: 22px;
+      margin-left: 8px;
+      background: var(--themeColorPrimary);
+      border-radius: 2px;
+
+      & > span {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0 8px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+  .card_main_action {
+    margin-top: 10px;
+    .action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 2px;
+      cursor: pointer;
+      &:hover {
+        color: var(--themeColorPrimary);
+        border: 1px solid var(--themeColorPrimary);
+      }
+    }
+    :global {
+      .ant-popover-arrow {
+        display: none !important;
+      }
+      .ant-popover-inner {
+        border-radius: 8px;
+      }
+      .ant-popover-inner-content {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+.card_cmtAdmin_btn {
+  position: absolute;
+  right: 32px;
+  width: 104px;
+  height: 40px;
+  border: 1px solid var(--theme-color-input-border);
+  border-radius: 8px;
+}

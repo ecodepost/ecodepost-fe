@@ -1,0 +1,85 @@
+.list {
+  height: calc(100vh - 64px);
+  padding: 20px 32px;
+  overflow-y: scroll;
+  background-color: #fff;
+  .list_title {
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 18px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 25px;
+    }
+  }
+  .list_content {
+    margin-top: 12px;
+    :global {
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td,
+      .ant-table tfoot > tr > th,
+      .ant-table tfoot > tr > td {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .ant-table-cell {
+        background: #fff;
+      }
+    }
+    .list_content_input {
+      width: 320px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 8px;
+    }
+    .list_content_name {
+      margin-left: 12px;
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+    }
+    .list_content_logintime,
+    .list_content_jointime {
+      color: var(--themeColorButtonText);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 22px;
+    }
+  }
+}
+
+.actionMenu {
+  width: 128px;
+  height: 80px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.12);
+  :global {
+    .ant-dropdown-menu {
+      height: 100%;
+      padding: 8px 8px;
+      box-shadow: none;
+    }
+    .ant-dropdown-menu-item {
+      height: 32px;
+    }
+    .ant-dropdown-menu-item:hover,
+    .ant-dropdown-menu-submenu-title:hover,
+    .ant-dropdown-menu-item.ant-dropdown-menu-item-active,
+    .ant-dropdown-menu-item.ant-dropdown-menu-submenu-title-active,
+    .ant-dropdown-menu-submenu-title.ant-dropdown-menu-item-active,
+    .ant-dropdown-menu-submenu-title.ant-dropdown-menu-submenu-title-active {
+      background-color: var(--themeColorBackground);
+    }
+  }
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

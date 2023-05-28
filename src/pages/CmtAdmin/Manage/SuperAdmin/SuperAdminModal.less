@@ -1,0 +1,130 @@
+.super {
+  padding: 24px 40px 40px 40px;
+  :global {
+    .ant-select-selector {
+      height: 100%;
+      border: 1px solid var(--theme-color-input-border) !important;
+      border-radius: 8px !important;
+    }
+  }
+  .superTitle {
+    & > span {
+      color: #19283b;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 28px;
+    }
+  }
+  .superInput {
+    margin-top: 32px;
+    .superInputBox {
+      width: 440px;
+      height: 48px;
+    }
+  }
+  .superList {
+    margin-top: 14px;
+    transition: all 0.3s;
+    .superListItem {
+      padding: 10px 0;
+      transition: all 0.3s;
+      .superListItemName {
+        margin-left: 12px;
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 14px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 22px;
+      }
+    }
+  }
+  .superAction {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 22px;
+    .superActionBtn {
+      width: 96px;
+      height: 48px;
+      border-radius: 8px;
+      & > span {
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+  .superApply {
+    margin-top: 12px;
+    .superApplySwitch {
+      display: flex;
+      flex-direction: column;
+      .superApplySwitchItem {
+        display: flex;
+        justify-content: space-between;
+        margin: 9px 0;
+        & > span {
+          color: var(--themeColorButtonText);
+          font-weight: 400;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 22px;
+        }
+      }
+    }
+    .superApplyGroup,
+    .superApplySpace {
+      margin-top: 20px;
+      .superApplyGroupTitle {
+        & > span {
+          color: var(--theme-color-nav);
+          font-weight: 400;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 22px;
+        }
+      }
+      .superApplyGroupInput {
+        margin-top: 8px;
+        .superApplyGroupInputBox {
+          width: 440px;
+          height: 48px;
+        }
+      }
+    }
+    .superApplySpace {
+      margin-top: 20px;
+    }
+    .superApplyAction {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 32px;
+      .superApplyActionBtn {
+        width: 96px;
+        height: 48px;
+        background: var(--themeColorPrimary);
+        border-radius: 8px;
+
+        & > span {
+          font-weight: 600;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.opt {
+  margin: 10px 0;
+  .opt_name {
+    margin-left: 12px;
+    color: var(--themeColorButtonText);
+    font-weight: 600;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 22px;
+  }
+}

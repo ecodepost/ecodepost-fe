@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.captchaWapper {
+  :global {
+    .ant-input {
+      height: 48px;
+      background-color: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(203, 213, 224, 1);
+      border-radius: 8px;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 32px 0;
+}
+
+.icon {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #28354a;
+  }
+}
+
+:global {
+  .ant-message {
+    top: 0px;
+  }
+
+  .ant-message-notice-content {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.captchaMessage {
+  width: 100%;
+  height: 80px;
+  color: #28354a;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 40px;
+  text-align: center;
+  background: #e2f7eb;
+}
+
+.captchaErrorMessage {
+  width: 100%;
+  height: 80px;
+  color: #28354a;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 40px;
+  text-align: center;
+  background: #ffeded;
+}

@@ -1,0 +1,52 @@
+.top_container {
+  background-color: bisque;
+}
+
+.modal {
+  position: relative;
+  :global {
+    .ant-modal-body {
+      padding: 60px 30px;
+      font-size: 18px;
+    }
+  }
+  .action {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    .action_btn {
+      margin-left: 20px;
+    }
+  }
+}
+
+.group_setting_container {
+  width: 180px;
+  margin-top: 12px;
+  padding: 12px 0px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+
+  .item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    padding: 0px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #dde0e2;
+    }
+  }
+
+  .subTitle {
+    display: inline-block;
+    margin-left: 12px;
+  }
+
+  .delete {
+    color: rgba(224, 47, 47);
+  }
+}

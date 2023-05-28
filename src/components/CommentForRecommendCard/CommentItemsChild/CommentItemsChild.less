@@ -1,0 +1,72 @@
+.container {
+  margin-top: 24px;
+  :global {
+    .ant-comment-content-author-name {
+      width: 100%;
+    }
+    .ant-comment-actions > li {
+      display: block;
+    }
+  }
+}
+.info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.author {
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.time {
+  margin-left: 12px;
+  color: var(--theme-color-nav);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.setting {
+  color: var(--theme-color-nav);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  & > span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+  }
+}
+
+.reply {
+  margin-top: 16px;
+  .reply_text {
+    width: 100%;
+  }
+  .reply_action {
+    position: absolute;
+    right: 16px;
+    transform: translateY(-70px);
+  }
+}
+
+.content {
+  & > span,
+  & > span > span {
+    color: var(--themeColorButtonText);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

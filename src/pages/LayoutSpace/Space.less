@@ -1,0 +1,41 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  margin: 0 32px;
+  background: white;
+  border-bottom: 1px solid #eceff4;
+}
+
+.header_back {
+  cursor: pointer;
+}
+
+.header_search {
+  width: 240px;
+  height: 32px;
+}
+
+.header_icon {
+  margin-left: 25px;
+  color: var(--theme-color-nav);
+  font-size: 20px;
+}
+
+.header_divider {
+  height: 32px;
+  margin-left: 23px;
+  background: var(--theme-color-input-border);
+}
+
+.header_avatar {
+  margin-left: 23px;
+}
+
+.content {
+  height: calc(100vh - 64px);
+}

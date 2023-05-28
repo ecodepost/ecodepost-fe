@@ -1,0 +1,140 @@
+.collectionContainer {
+  width: 100%;
+  overflow: hidden;
+
+  .cateRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+
+    .cateButtonChoose {
+      height: 40px;
+      margin-right: 16px;
+      padding: 8px 20px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+      background: var(--themeColorPrimary);
+      border-radius: 4px;
+    }
+
+    .cateButtonUnChoose {
+      margin-right: 16px;
+      color: #19283b;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .cateButton {
+      height: 40px;
+      margin-left: 16px;
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 24px;
+      background: #fff;
+      border: 1px solid var(--theme-color-input-border);
+      border-radius: 4px;
+    }
+  }
+
+  .cardList {
+    height: calc(100vh - 240px);
+    margin-top: 20px;
+    overflow-y: scroll;
+
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid var(--theme-color-divider);
+      border-radius: 8px;
+
+      .title {
+        cursor: pointer;
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 18px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+
+      .content {
+        display: -webkit-box;
+        margin-top: 8px;
+        overflow: hidden;
+        color: var(--themeColorButtonText);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+
+      .infoRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+
+        .info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .infoAction {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .infoSpan {
+            display: inline-block;
+            margin-left: 12px;
+            color: var(--theme-color-nav);
+            font-weight: 400;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            line-height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .card:hover {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .15);
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
+.infoAvatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-color: antiquewhite;
+}
+
+.infoSpan {
+  display: inline-block;
+  margin-right: 12px;
+  color: var(--theme-color-nav);
+  font-weight: 600;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 22px;
+}

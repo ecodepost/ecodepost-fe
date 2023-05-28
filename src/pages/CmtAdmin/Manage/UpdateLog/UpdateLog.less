@@ -1,0 +1,223 @@
+.log {
+  margin: 20px 32px;
+}
+
+.logHeader {
+  background-color: #fff;
+  display: flex;
+  padding: 0px 20px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(228, 231, 235);
+  align-items: center;
+  height: 88px;
+  border-bottom: var(--theme-color-divider) solid 1px;
+  :global {
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+    }
+    .ant-select-dropdown {
+      width: 160px;
+      border-radius: 8px;
+    }
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+      background: var(--themeColorBackground);
+
+      .userIcon,
+      .userIcon ~ span {
+        color: var(--themeColorPrimary);
+      }
+    }
+  }
+}
+
+.logHeaderDate {
+  width: 280px;
+  height: 48px;
+  border-radius: 8px;
+  & > span {
+    color: var(--themeColorButtonText);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+  }
+  :global {
+    .ant-picker-range .ant-picker-clear {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.logHeaderAdmin {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  & > span {
+    color: var(--themeColorButtonText);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+  }
+  .logHeaderAdminSelect {
+    width: 120px;
+    height: 48px;
+    margin-left: 12px;
+    :global {
+      .ant-select-selector {
+        width: 120px;
+        height: 48px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.logHeaderAction {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  .logHeaderActionSelect {
+    margin-left: 13px;
+    :global {
+      .ant-select-selector {
+        width: 120px;
+        height: 48px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.logHeaderTotal {
+  margin-left: 16px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 22px;
+
+  & > span {
+    margin: 0 2px;
+    color: var(--themeColorPrimary);
+  }
+}
+
+.typeInput {
+  height: 32px;
+  border-radius: 4px;
+}
+
+.searchIcon {
+  color: var(--theme-color-input-border);
+  font-size: 14px;
+}
+
+.userIcon {
+  color: var(--theme-color-nav);
+  font-size: 12px;
+}
+
+.option {
+  height: 32px;
+  margin: 4px 8px;
+  &:hover {
+    background: var(--themeColorBackground);
+  }
+  & > span {
+    margin-left: 8px;
+    color: var(--themeColorButtonText);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+  }
+}
+
+.logTable {
+  border-radius: 8px;
+  border: 1px solid rgb(228, 231, 235);
+  :global {
+    .ant-table-thead
+      > tr
+      > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+      display: none;
+    }
+    .ant-table-thead > tr > th {
+      background: #fff;
+    }
+    tr.ant-table-expanded-row > td,
+    tr.ant-table-expanded-row:hover > td {
+      background: #fff;
+    }
+  }
+}
+
+.tableTitle {
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 22px;
+}
+
+.tableText {
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 24px;
+}
+
+.tableAdminText {
+  margin-left: 12px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  line-height: 24px;
+}
+
+.tableExpandBox,
+.tableExpandBoxExpanded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--theme-color-input-border);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tableExpandBoxExpanded {
+  border: 1px solid var(--themeColorPrimary);
+
+  .tableExpandBoxIcon {
+    color: var(--themeColorPrimary);
+  }
+}
+
+.tableExpandBoxIcon {
+  color: var(--theme-color-nav);
+  font-size: 10px;
+  transition: all 0.3s;
+}
+
+.tableExpandInnerTable {
+  :global {
+    .ant-table-expanded-row .ant-table-cell {
+      padding: 16px 0;
+    }
+  }
+}
+
+.tableExtraText {
+  color: var(--theme-color-secondary);
+  font-size: 12px;
+  font-family: LucidaGrande;
+  line-height: 20px;
+}

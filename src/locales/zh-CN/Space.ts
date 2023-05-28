@@ -1,0 +1,42 @@
+/** /pages/Space */
+export default {
+  /** SpaceBlocked */
+  'space.blocked.title': '此空间内容仅对成员公开',
+  'space.blocked.subtitle.private': '您尚未成为此空间成员',
+  'space.blocked.subtitle.secret': '您尚未被邀请成为此空间成员',
+  'space.blocked.submit': '申请加入空间',
+  'space.blocked.submit.ready': '已向管理员发送申请',
+  'space.blocked.apply.fail': '申请失败',
+  'space.blocked.img.alt': '无权限空间图片',
+  'space.blocked.modal.apply.title': '请输入申请理由',
+  'space.blocked.modal.apply.submit': '提交申请',
+  'space.blocked.status.apply': '已提交申请',
+  'space.blocked.status.reject': '申请被拒绝，您可重新发起申请',
+  'space.blocked.status.reapply': '已重新提交申请',
+  'space.blocked.write.tip': '加入该空间以进行操作',
+  /** ChannelLayout */
+  'space.channel.apply': '加入',
+  'space.channel.apply.success': '成功加入空间',
+  /** /SideBar */
+  'space.channel.sidebar.menu.member': '查看空间成员',
+  'space.channel.sidebar.menu.member.search.input': '搜索成员',
+  'space.channel.sidebar.menu.member.search.empty': '暂无成员',
+  'space.channel.sidebar.menu.notice': '查看公告',
+  'space.channel.sidebar.menu.notice.title.default': '公告',
+  'space.channel.sidebar.menu.notice.content.default': '我是一封公告',
+  'space.channel.sidebar.menu.notice.post': '发布新公告',
+  'space.channel.sidebar.menu.notice.post.time': '发表于',
+  'space.channel.sidebar.menu.notice.empty': '暂无公告',
+  'space.channel.sidebar.menu.notice.detail': '查看详情',
+  'space.channel.sidebar.menu.notice.default': '公告',
+  'space.channel.sidebar.menu.notice.new': '发布新公告',
+  'space.channel.sidebar.menu.setting': '查看设置',
+  'space.channel.sidebar.menu.setting.edit.nickname': '修改我的空间昵称',
+  'space.channel.sidebar.menu.setting.edit.notice': '开启消息提醒',
+  'space.channel.sidebar.menu.setting.exit': '退出空间',
+  'space.channel.sidebar.menu.history': '查看历史讨论',
+  'space.channel.sidebar.init.fail': '获取 IM GroupID 失败',
+  /** SpaceLayout */
+  'space.layout.apply': '加入',
+  'space.layout.apply.success': '成功加入空间',
+};

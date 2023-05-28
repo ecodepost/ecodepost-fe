@@ -1,0 +1,41 @@
+.picker {
+  :global {
+    .ant-popover-arrow {
+      display: none !important;
+    }
+    .ant-popover-inner-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+.container {
+  width: 338px;
+  // height: 428px; 暂时小一点
+
+  :global {
+    .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+    .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+
+  .content_status_input {
+    height: 48px;
+  }
+
+  .tab_content {
+    padding: 12px 6px;
+  }
+}
+
+.emoji {
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    background: var(--themeColorBackground);
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,235 @@
+.group {
+  height: 100%;
+  padding: 20px 32px 32px 32px;
+  overflow-y: scroll;
+  background-color: #fdfefe;
+  .group_title {
+    & > span:first-child {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 18px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 25px;
+    }
+    & > span:last-child {
+      margin-left: 8px;
+      color: var(--theme-color-nav);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+  }
+  .group_tab_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    & > span {
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .group_tab_content_title {
+      & > span {
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 18px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 25px;
+      }
+    }
+    .group_tab_content_item {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        .group_tab_content_item_title {
+          color: var(--themeColorButtonText);
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+        .group_tab_content_item_subtitle {
+          margin-top: 4px;
+          color: var(--theme-color-nav);
+          font-weight: 400;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 20px;
+        }
+      }
+      .group_tab_content_item_switch {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+    .group_tab_content_divider {
+      height: 1px;
+      background: var(--theme-color-divider);
+    }
+    .group_tab_content_action {
+      margin-top: 20px;
+      :global {
+        .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+          color: black;
+          background: #fff;
+          cursor: default;
+        }
+      }
+      .group_tab_content_action_btn {
+        width: 160px;
+        height: 40px;
+        border: 1px solid var(--themeColorPrimary);
+        border-radius: 8px;
+
+        & > span {
+          color: var(--themeColorStatus);
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+      }
+      .group_tab_content_action_select {
+        width: 100%;
+        height: 48px;
+        margin-top: 12px;
+        border-radius: 8px;
+        .group_tab_content_action_select_act {
+          display: flex;
+          align-items: center;
+          .group_tab_content_action_select_act_text {
+            margin-right: 13px;
+            margin-left: 9px;
+            color: var(--themeColorButtonText);
+            font-weight: 400;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            line-height: 22px;
+            cursor: pointer;
+          }
+          .group_tab_content_action_select_act_icon {
+            margin-left: 13px;
+            color: var(--theme-color-nav);
+            font-size: 14px;
+          }
+        }
+        :global {
+          .ant-select-selector {
+            height: 48px;
+            border-radius: 8px;
+          }
+          .ant-divider {
+            background-color: var(--theme-color-input-border);
+          }
+          .ant-select-arrow {
+            pointer-events: all;
+          }
+          .ant-select-selection-item,
+          .ant-select-selection-placeholder {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .group_action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    .group_action_btn {
+      width: 96px;
+      height: 48px;
+      border-radius: 8px;
+      & > span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal {
+  :global {
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+    .ant-modal-body {
+      padding: 0 0;
+    }
+  }
+}
+
+.groupedit {
+  padding: 24px 32px 32px 32px;
+  .groupedit_title {
+    & > span {
+      color: #19283b;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 28px;
+    }
+  }
+  .groupedit_content {
+    .groupedit_content_item {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        .groupedit_content_item_title {
+          color: var(--themeColorButtonText);
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+        .groupedit_content_item_subtitle {
+          margin-top: 4px;
+          color: var(--theme-color-nav);
+          font-weight: 400;
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          line-height: 20px;
+        }
+      }
+    }
+    .groupedit_content_divider {
+      height: 1px;
+      background: var(--theme-color-divider);
+    }
+  }
+  .groupedit_action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    .groupedit_action_btn {
+      width: 96px;
+      height: 48px;
+      border-radius: 8px;
+      & > span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

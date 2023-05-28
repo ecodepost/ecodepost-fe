@@ -1,0 +1,27 @@
+.action_container {
+  width: 128px;
+  padding: 8px 8px;
+}
+
+.action_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+  &:hover {
+    background: var(--themeColorBackground);
+
+    & > span {
+      color: var(--themeColorButtonText);
+    }
+  }
+  & > span {
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  }
+}

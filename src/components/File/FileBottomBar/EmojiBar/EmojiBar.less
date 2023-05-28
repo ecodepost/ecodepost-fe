@@ -1,0 +1,47 @@
+.card_action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .card_action_tag {
+    min-width: 52px;
+    height: 24px;
+    color: #6f7b91;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+  }
+  .card_action_tag_inactive,
+  .card_action_tag_active {
+    min-width: 52px;
+    height: 24px;
+    color: #6f7b91;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    & > span {
+      color: var(--theme-color-disabled);
+    }
+    &:hover {
+      color: white;
+      background: var(--themeColorPrimary);
+      border-color: var(--themeColorPrimary);
+
+      & > span {
+        color: white;
+      }
+    }
+  }
+  .card_action_tag_active {
+    min-width: 52px;
+    height: 24px;
+    color: var(--themeColorPrimary);
+    border-color: var(--themeColorPrimary);
+
+    & > span {
+      color: white;
+    }
+  }
+}

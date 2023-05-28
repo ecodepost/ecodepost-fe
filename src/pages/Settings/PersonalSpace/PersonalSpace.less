@@ -1,0 +1,54 @@
+.ps {
+  width: calc(400px + 32px * 2);
+  padding: 32px 32px;
+  .ps_item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    margin-bottom: 21px;
+    .ps_item_title {
+      margin-bottom: 12px;
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 22px;
+    }
+    .ps_item_switch {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 0;
+      & > span {
+        color: var(--themeColorButtonText);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+      }
+    }
+  }
+  .divider {
+    height: 1px;
+    background: #eceff4;
+  }
+  .ps_submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    .ps_submit_btn {
+      width: 128px;
+      height: 48px;
+      background: var(--themeColorPrimary);
+      border-radius: 8px;
+
+      & > span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

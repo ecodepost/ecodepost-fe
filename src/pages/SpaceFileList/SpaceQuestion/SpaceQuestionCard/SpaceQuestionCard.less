@@ -1,0 +1,103 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid rgb(228, 231, 235);
+  border-radius: 8px;
+
+  &:hover {
+    .card_setting_icon {
+      opacity: 1;
+    }
+  }
+
+  :global {
+    .ant-popover-arrow {
+      display: none !important;
+    }
+
+    .ant-popover-inner-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+.card_aside {
+  .card_aside_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    margin-top: 4px;
+    // height: 40px;
+    background: rgba(3, 207, 93, 0.1);
+    border: 1px solid var(--themeColorPrimary);
+    border-radius: 4px;
+
+    .card_aside_cnt {
+      color: var(--themeColorStatus);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .card_aside_text {
+      color: var(--themeColorStatus);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+.card_main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  .card_main_title {
+    margin-bottom: 8px;
+    color: #28354a;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  .card_main_content {
+    color: #28354a;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 22px;
+
+    .card_main_content_expand_text {
+      color: var(--themeColorStatus);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      cursor: pointer;
+    }
+    .card_main_content_expand_icon {
+      width: 9px;
+      height: 5px;
+    }
+  }
+  .card_main_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+    .card_main_info_text {
+      margin-left: 8px;
+      color: var(--theme-color-nav);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

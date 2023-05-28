@@ -1,0 +1,147 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  margin: 0 32px;
+  background: white;
+  border-bottom: 1px solid #eceff4;
+
+  :global {
+    .ant-badge {
+      width: 20px;
+      height: 20px;
+      margin-left: 25px;
+    }
+  }
+}
+
+.header_back {
+  cursor: pointer;
+}
+
+.header_search {
+  width: 240px;
+  height: 32px;
+}
+
+.header_icon {
+  color: var(--theme-color-nav);
+  font-size: 20px;
+}
+
+.header_avatar {
+  margin-left: 23px;
+}
+
+.container {
+  height: calc(100vh - 64px);
+}
+
+.content {
+  padding: 0px 32px 16px 32px;
+
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+
+    .ant-tabs-tab-btn {
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-tabs-tab-active {
+      & > div > span {
+        color: var(--themeColorStatus);
+      }
+
+      .ant-badge-count {
+        background: var(--themeColorPrimary);
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background: var(--themeColorPrimary);
+    }
+  }
+}
+
+.count {
+  color: var(--theme-color-nav);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.badge {
+  margin-left: 8px;
+
+  :global {
+    .ant-badge-count {
+      min-width: 15px;
+      padding: 0 0;
+      background: var(--theme-color-input-border);
+      border-radius: 4px;
+    }
+  }
+}
+
+.member {
+  margin: 17px 16px;
+}
+
+.member_header {
+  display: flex;
+  flex-direction: row;
+}
+
+.member_header_btn {
+  width: 96px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid var(--theme-color-input-border);
+  border-radius: 8px;
+}
+
+.member_header_input {
+  width: 240px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+.member_list {
+  margin-top: 3px;
+}
+
+.modal {
+  :global {
+    .ant-modal-content {
+      border-radius: 8px !important;
+    }
+
+    .ant-modal-body {
+      padding: 0 0;
+    }
+  }
+}
+
+.modalInternal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  .modalInternalBtn {
+    border-radius: 4px;
+  }
+  & > span {
+    color: var(--theme-color-nav);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

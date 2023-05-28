@@ -1,0 +1,78 @@
+.award {
+  margin: 20px 24px;
+}
+
+.award_title,
+.recommend_title {
+  width: 100%;
+  padding-bottom: 8px;
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 24px;
+  border-bottom: 1px solid var(--theme-card-border);
+}
+
+.award_content_item {
+  display: flex;
+  padding: 10px 0;
+
+  &:first-child {
+    padding-top: 18px;
+  }
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.userinfo_top {
+  & > span {
+    color: var(--themeColorButtonText);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.recommend {
+  padding: 16px 20px;
+  background-color: white;
+  border: 1px solid var(--theme-card-border);
+  border-radius: 8px;
+}
+
+.recommend_content_item {
+  margin: 16px 0;
+  cursor: pointer;
+
+  &:hover span {
+    color: var(--themeColorPrimary);
+  }
+}
+
+.recommend_item_title {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.recommend_item_author {
+  display: block;
+  margin-top: 4px;
+  color: var(--theme-color-nav);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}

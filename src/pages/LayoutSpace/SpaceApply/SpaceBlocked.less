@@ -1,0 +1,120 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.blockTitle {
+  margin-top: 24px;
+
+  & > span {
+    color: var(--themeColorButtonText);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+}
+
+.blockSubTitle {
+  margin-top: 12px;
+
+  & > span {
+    color: var(--theme-color-nav);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 24px;
+  }
+}
+
+.blockButton {
+  width: 160px;
+  height: 48px;
+  margin-top: 20px;
+  border: 1px solid var(--themeColorPrimary);
+  border-radius: 8px;
+
+  & > span {
+    color: var(--themeColorPrimary);
+    font-weight: 600;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+  }
+}
+
+.modal {
+  :global {
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+}
+
+.modalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+
+  .modalBoxIcon {
+    color: var(--themeColorPrimary);
+    font-size: 36px;
+  }
+
+  .modalBoxText {
+    margin-left: 12px;
+    color: #19283b;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 28px;
+  }
+}
+
+.modalBoxApply {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px;
+
+  .modalBoxTitle {
+    color: #19283b;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 28px;
+  }
+
+  .modalBoxInput {
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid var(--theme-color-input-border);
+    border-radius: 8px;
+  }
+
+  .modalBoxAction {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+
+    .modalBoxActionBtn {
+      width: 96px;
+      height: 48px;
+      border-radius: 8px;
+
+      & > span {
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 24px;
+      }
+    }
+  }
+}

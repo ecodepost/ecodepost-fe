@@ -1,0 +1,380 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  height: calc(100vh - 64px);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+
+  .profileContainer {
+    flex: 2;
+    height: calc(100vh - 64px);
+    padding: 40px 32px;
+    overflow-y: scroll;
+    background: var(--themeColorBackground);
+
+    .avatarContainer {
+      position: relative;
+      width: 100px;
+      margin: auto;
+      margin-bottom: 12px;
+
+      .profileAvatar {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border-radius: 50%;
+      }
+
+      .profileLvConatiner {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 42px;
+        height: 42px;
+        padding-top: 6px;
+        background-color: white;
+        border-radius: 50%;
+
+        .profileLv {
+          width: 30px;
+          height: 30px;
+          margin: auto;
+          color: #fff;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 30px;
+          text-align: center;
+          background: #ff8a3d;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .name {
+      margin: auto;
+      margin-bottom: 4px;
+      color: var(--themeColorButtonText);
+      font-weight: 600;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    .joinTime {
+      margin: auto;
+      color: var(--theme-color-nav);
+      font-weight: 400;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    .dataContainer {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 32px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      cursor: pointer;
+
+      .dataNum {
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 20px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        line-height: 28px;
+      }
+
+      .explain {
+        color: var(--theme-color-nav);
+        font-weight: 400;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 18px;
+      }
+    }
+
+    .dataContainer:hover {
+      transition: all 0.5s;
+
+      .dataNum {
+        color: #02B953;
+      }
+
+      .explain {
+        color: #02B953;
+      }
+    }
+
+    .detailData {
+      width: 100%;
+      margin-bottom: 32px;
+
+      :global {
+        .ant-divider {
+          margin: 8px 0;
+        }
+      }
+
+      .title {
+        color: var(--themeColorButtonText);
+        font-weight: 600;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        line-height: 22px;
+      }
+
+      .medalContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .medalTitle {
+          width: 20%;
+          margin: auto;
+          color: var(--themeColorButtonText);
+          font-weight: 600;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+
+        .medalDetail {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: start;
+          width: 80%;
+          margin-top: 24px;
+
+          .medalInfo {
+            width: 25%;
+            text-align: center;
+
+            .medalUrl {
+              width: 40px;
+              height: 40px;
+              margin-bottom: 8px;
+            }
+
+            .medalInfoName {
+              margin-bottom: 1px !important;
+              color: var(--themeColorButtonText);
+              font-weight: 600;
+              font-size: 14px;
+              font-family: PingFangSC-Medium, PingFang SC;
+              line-height: 22px;
+            }
+
+            .medalInfoTime {
+              color: var(--theme-color-nav);
+              font-weight: 400;
+              font-size: 12px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+
+      .manageInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .manageLogo {
+          width: 60px;
+          height: 40px;
+          background: #ffdede;
+        }
+
+        .manageName {
+          width: 160px;
+          color: var(--themeColorButtonText);
+          font-weight: 600;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+          text-align: left;
+        }
+
+        .manageButton {
+          background: #fff;
+          border: 1px solid var(--theme-color-input-border);
+          border-radius: 4px;
+        }
+      }
+
+      .visitor {
+        margin-bottom: 12px;
+        color: var(--themeColorButtonText);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .community {
+    flex: 3;
+    height: calc(100vh - 64px);
+    padding: 20px 32px;
+
+    :global {
+      .ant-tabs-nav {
+        margin-bottom: 0;
+      }
+
+      .ant-tabs-nav-wrap {
+        margin: 0 16px;
+      }
+
+      .ant-tabs-tab-btn {
+        display: flex;
+        align-items: center;
+      }
+
+      .ant-tabs-tab-active {
+        & > div > span {
+          color: var(--themeColorStatus);
+        }
+
+        .ant-badge-count {
+          background: var(--themeColorPrimary);
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        background: var(--themeColorPrimary);
+      }
+    }
+
+    .count {
+      color: var(--theme-color-nav);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .followHeader {
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #02B953;
+      line-height: 24px;
+    }
+
+    .followTitle {
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #28354A;
+      line-height: 22px;
+      margin-top: 20px;
+    }
+
+    .followCard {
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .followInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        .followAvatar {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin-right: 12px;
+        }
+
+        .followName {
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #28354A;
+          line-height: 24px;
+          margin-bottom: 4px;
+        }
+
+        .followDesc {
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #6F7B91;
+          line-height: 20px;
+          margin-bottom: 4px;
+        }
+
+        .followData {
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #28354A;
+          line-height: 20px;
+          margin-bottom: 4px;
+        }
+
+        .followTag {
+          font-size: 12px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #28354A;
+          line-height: 20px;
+          margin-bottom: 4px;
+        }
+      }
+
+      .followButton {
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 1px solid #CBD5E0;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.noData {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.otherButton {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 32px;
+  color: #19283b;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 24px;
+  background: #fff;
+  border: 1px solid var(--theme-color-input-border);
+  border-radius: 8px;
+}

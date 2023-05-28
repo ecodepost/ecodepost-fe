@@ -1,0 +1,129 @@
+.invite {
+  height: 460px;
+  padding: 24px 32px;
+}
+
+.invite_header {
+  & > span {
+    color: #19283b;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.invite_main {
+  height: 300px;
+  margin-top: 12px;
+  :global {
+    .ant-transfer-operation {
+      display: none;
+    }
+    .ant-transfer-list {
+      width: 50%;
+      height: 100%;
+      border-radius: 0;
+      &:first-child {
+        border-right: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      &:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        .ant-transfer-list-body-search-wrapper {
+          display: none;
+        }
+      }
+    }
+    .ant-transfer-list-header {
+      background: none;
+    }
+    .ant-transfer-list-body-customize-wrapper {
+      overflow-y: scroll;
+    }
+    .ant-transfer {
+      height: 100%;
+    }
+    .ant-transfer-list-footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 16px;
+      margin-bottom: 12px;
+      border-top: none;
+    }
+    .ant-transfer-list-header,
+    .ant-pro-table-alert {
+      display: none;
+    }
+    .ant-pro-card-body,
+    .ant-transfer-list-body-customize-wrapper {
+      padding: 0 0;
+    }
+    .ant-pro-list .ant-pro-list-row-header-option {
+      align-items: center;
+    }
+    .ant-transfer-list-body-search-wrapper {
+      padding: 16px 16px;
+    }
+    .ant-pro-list .ant-list-item {
+      padding: 4px 16px;
+      &:first-child {
+        margin-top: 12px;
+      }
+    }
+    .ant-input-affix-wrapper {
+      height: 40px;
+      border-radius: 8px;
+    }
+    .ant-list-item-meta-content {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+.invite_action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  .invite_action_btn {
+    width: 96px;
+    height: 48px;
+    border-radius: 8px;
+  }
+}
+
+.search_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 48px;
+  & > span {
+    margin-left: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.deleteMember {
+  color: var(--theme-color-nav);
+  font-size: 12px;
+}
+
+.memberNickname {
+  color: var(--themeColorButtonText);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.memberCnt {
+  display: block;
+  margin-top: 26px;
+  margin-left: 16px;
+  color: var(--themeColorButtonText);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

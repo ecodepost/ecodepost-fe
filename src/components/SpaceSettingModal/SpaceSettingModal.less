@@ -1,0 +1,131 @@
+.container {
+  top: 0px !important;
+  z-index: 9999;
+  width: 100vw !important;
+  max-width: 100vw !important ;
+  height: 100vh !important;
+  margin: 0px !important ;
+  padding-bottom: 0px !important;
+
+  :global {
+    .ant-modal {
+      top: 0px !important;
+      width: 100vw;
+      max-width: 100vw !important ;
+      height: 100vh;
+      margin: 0px !important ;
+      padding-bottom: 0px !important;
+    }
+
+    .ant-modal-wrap {
+      width: 100vw !important;
+      height: 100vh;
+    }
+
+    .ant-modal-mask {
+      display: none !important;
+    }
+
+    .ant-modal-content {
+      height: 100vh;
+      padding: 0px;
+    }
+
+    .ant-modal-footer {
+      display: none !important;
+    }
+
+    .ant-modal-close {
+      display: none;
+    }
+
+    .ant-modal-body {
+      padding: 0px !important;
+    }
+  }
+
+  .box {
+    background-color: #f7f9fa;
+
+    .header {
+      padding: 16px 24px;
+      background: #ffffff;
+      box-shadow: 0px 1px 0px 0px #eceff4;
+
+      .back {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+
+        .icon {
+          padding: 4px;
+          background: #ffffff;
+          border: 1px solid #cbd5e0;
+          border-radius: 4px;
+        }
+
+        .back_title {
+          display: inline-block;
+          margin-left: 12px;
+          color: #28354a;
+          font-weight: 500;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 22px;
+        }
+      }
+
+      .center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        :global {
+          .ant-radio-button-wrapper {
+            margin-right: 20px;
+            padding: 6px 16px;
+            font-weight: 500;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            line-height: 18px;
+            border: none;
+            border-radius: 4px;
+          }
+
+          .ant-radio-button-wrapper-checked {
+            background: #ffffff;
+            border: 1px solid var(--themeColorPrimary);
+            box-shadow: 0px 1px 0px 0px #eceff4;
+          }
+
+          .ant-radio-button-wrapper:not(:first-child)::before {
+            display: none;
+          }
+        }
+      }
+
+      .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+
+        .action {
+          padding: 6px 18px;
+          font-weight: 500;
+          font-size: 16px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          line-height: 16px;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .body {
+      max-width: 800px;
+      height: calc(100vh - 65px);
+      margin: 0 auto;
+      overflow-y: scroll;
+    }
+  }
+}

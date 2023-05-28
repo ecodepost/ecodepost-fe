@@ -1,0 +1,63 @@
+.container {
+  .card {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid var(--theme-card-border);
+    border-radius: 8px;
+
+    .card_name {
+      color: rgba(40, 53, 74, 1);
+      font-size: 20px;
+      font-family: PingFangSC-Semibold;
+      line-height: 28px;
+      text-align: left;
+      overflow-wrap: break-word;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .card_share_icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: right;
+      background-size: 100% 100%;
+    }
+
+    .bottom_bar {
+      margin-top: 20px;
+      padding: 14px 32px;
+      border-top: 1px solid var(--theme-card-border);
+
+      .card_action_icon {
+        display: inline-block;
+        font-size: 16px;
+      }
+    }
+
+    .col_icon {
+      text-align: right;
+    }
+  }
+
+  .card:first-child {
+    margin-top: 0px;
+  }
+}
+
+.card_padding {
+  padding: 32px 32px 0 32px;
+}
+
+.card_action_action {
+  display: block;
+  margin-top: 12px;
+  color: var(--themeColorStatus);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}

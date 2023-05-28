@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  margin: auto;
+  //padding-top: 32px;
+  overflow-y: overlay;
+
+  :global {
+    .ant-tabs-content {
+      height: 100%;
+    }
+
+    // .ant-tabs-tabpane {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+    .ant-tabs-nav {
+      margin-bottom: 0;
+    }
+
+    .ant-radio-button-wrapper {
+      border: none !important;
+      border-left-width: 0 !important;
+    }
+
+    .ant-radio-button-checked {
+      border: var(--themeColorPrimary) 1px solid;
+    }
+  }
+}

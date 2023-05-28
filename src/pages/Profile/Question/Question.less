@@ -1,0 +1,54 @@
+.collectionContainer {
+  width: 100%;
+  overflow: hidden;
+
+  .cardList {
+    height: calc(100vh - 240px);
+    margin-top: 20px;
+    overflow-y: scroll;
+
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid var(--theme-color-divider);
+      border-radius: 8px;
+
+      .font {
+        color: #6F7B91;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 0px;
+      }
+
+      .time {
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .content {
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #28354A;
+        line-height: 24px;
+        margin-top: 12px;
+      }
+
+      .communityName {
+        margin-left: 8px;
+        display: inline-block;
+        color: #0176FF;
+        margin-right: 8px;
+      }
+    }
+
+    .card:hover {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .15);
+      transition: all .2s ease-in-out;
+    }
+  }
+}
