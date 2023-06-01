@@ -47,9 +47,6 @@ export default [
               },
             ],
           },
-          {
-            component: './404',
-          },
         ],
       },
       {
@@ -106,9 +103,6 @@ export default [
             path: '/admin/memberList',
             component: './CmtAdmin/Manage/MemberList/MemberList',
             name: '社区成员',
-          },
-          {
-            component: './404',
           },
         ],
       },
@@ -170,9 +164,6 @@ export default [
                 name: '文章列表',
                 component: './SpaceFileList/SpaceFileListPage',
               },
-              {
-                component: './404',
-              },
             ],
           },
           {
@@ -206,9 +197,6 @@ export default [
                 name: '帖子',
               },
             ],
-          },
-          {
-            component: './404',
           },
         ],
       },
@@ -260,18 +248,13 @@ export default [
             name: '个人空间信息展示',
             component: './Settings/PersonalSpace/PersonalSpace',
           },
-          {
-            component: './404',
-          },
         ],
       },
 
-      {
-        component: './404',
-      },
     ],
   },
   {
+    path: "*",
     component: './404',
   },
 ];
