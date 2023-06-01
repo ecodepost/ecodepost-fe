@@ -5,7 +5,6 @@ import proxy from './proxy';
 import routes from './routes';
 
 const { REACT_APP_ENV } = process.env;
-console.log('REACT_APP_ENV', REACT_APP_ENV);
 
 export default defineConfig({
   /**
@@ -155,7 +154,9 @@ export default defineConfig({
 
   // nodeModulesTransform: { type: 'none' },
   // webpack5: {},
-  // exportStatic: {},
+  // https://umijs.org/docs/api/config#exportstatic
+  // 开启该配置后会针对每个路由单独输出 HTML 文件，通常用于静态站点托管。例如项目有如下路由：
+  exportStatic: {},
   define: {
     DOMAIN: '', // Domain地址
     MAIN_DOMAIN_HOST: '', // 主HOST
