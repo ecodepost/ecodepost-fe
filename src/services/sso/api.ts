@@ -6,7 +6,7 @@ import { request } from 'umi';
 /** 重置密码接口 POST /api/password/reset */
 /** @loginrequired */
 export async function resetpwd(body: SSOAPI.ResetPwdParams, options?: { [key: string]: any }) {
-  return request<Record<string, any>>('/sso/api/password/reset', {
+  return request<Record<string, any>>('/api/sso/password/reset', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export async function getRegisterCaptcha(
   },
   options?: { [key: string]: any },
 ) {
-  return request<SSOAPI.Captcha>('/sso/api/phone/sendRegisterCode', {
+  return request<SSOAPI.Captcha>('/api/sso/phone/sendRegisterCode', {
     method: 'POST',
     params: {
       ...params,

@@ -19,11 +19,6 @@ export default {
       changeOrigin: true,
       pathRewrite: {'^': ''},
     },
-    '/sso/api/': {
-      target: 'http://127.0.0.1:9002',
-      changeOrigin: true,
-      pathRewrite: {'^': ''},
-    },
   },
   pre: {
     '/api/': {
@@ -31,11 +26,6 @@ export default {
       target: 'https://ecodepost.com',
       // 配置了这个可以从 http 代理到 https
       // 依赖 origin 的功能可能需要这个，比如 cookie
-      changeOrigin: true,
-      pathRewrite: {'^': ''},
-    },
-    '/sso/api/': {
-      target: 'https://ecodepost.com',
       changeOrigin: true,
       pathRewrite: {'^': ''},
     },
