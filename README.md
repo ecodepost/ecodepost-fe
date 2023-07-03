@@ -1,4 +1,4 @@
-# of-fe
+# ecodepost-fe
 
 ## 运行
 
@@ -8,7 +8,7 @@
 
 https://github.com/umijs/umi/issues/6992
 
-如果依赖有问题。删除node_modules, umi
+如果依赖有问题。删除 node_modules, umi
 
 https://ahooks.js.org/zh-CN/
 
@@ -20,11 +20,8 @@ http://www.devboy.cn/article/287517
 
 ## 自定义主题
 
-https://ant.design/components/config-provider-cn/#components-config-provider-demo-theme
-https://github.com/1019483075/lingxi/issues/26
+https://ant.design/components/config-provider-cn/#components-config-provider-demo-theme https://github.com/1019483075/lingxi/issues/26
 
 ## 性能优化
 
 https://react-dnd.github.io/react-dnd/examples/dustbin/copy-or-move
-
-
