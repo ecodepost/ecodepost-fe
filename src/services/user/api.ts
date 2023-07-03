@@ -1,8 +1,7 @@
 // @ts-ignore
 /* eslint-disable */
-import {request} from 'umi';
-import {UserAPI} from './typings';
-
+import { request } from 'umi';
+import { UserAPI } from './typings';
 
 // 根据用户 ID 查询用户信息
 export async function getUserByID(id: number) {
@@ -81,4 +80,3 @@ export async function updateMyEmail(email: number, options?: { [key: string]: an
     ...(options || {}),
   });
 }
-

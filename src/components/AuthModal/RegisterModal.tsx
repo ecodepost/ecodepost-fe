@@ -1,46 +1,47 @@
-import {Button, Form, Input} from "antd";
-import {useEffect, useState} from "react";
-import useRequestX from "@/hooks/useRequestX";
-import styles from "@/components/AuthModal/index.less";
-import {apiRegister, apiRegisterPhoneCode} from "@/services/custom/api";
-import {useModel} from "@@/exports";
-
+import { Button, Form, Input } from 'antd';
+import { useEffect, useState } from 'react';
+import { ProFormCheckbox, LoginForm } from '@ant-design/pro-form';
+import MobileCaptchaForm from '@/components/MobileCaptchaForm/MobileCaptchaForm';
+import PasswordForm from '@/components/PasswordForm/PasswordForm';
+import useRequestX from '@/hooks/useRequestX';
+import styles from '@/components/AuthModal/index.less';
+import { apiRegister, apiRegisterPhoneCode } from '@/services/custom/api';
+import { useModel } from '@@/exports';
 
 type RegisterModalProps = {
   handleCancel: () => void;
   setModeType: (type: string) => void;
-}
+};
 
 const layout = {
   wrapperCol: { span: 24 },
 };
 
 const RegisterModal = (props: RegisterModalProps) => {
-  const { setModeType, handleCancel } = props
-  const { refresh } = useModel('@@initialState')
+  const { setModeType, handleCancel } = props;
+  const { refresh } = useModel('@@initialState');
   const [registerForm] = Form.useForm();
   const phone = Form.useWatch('account', registerForm);
   const [isText, setIsText] = useState<boolean>(false);
   const [count, setCount] = useState<number>();
 
-
-  const apiRegisterPhoneCodeReq = useRequestX(apiRegisterPhoneCode,{
-    onSuccess: ({data}) => {
+  const apiRegisterPhoneCodeReq = useRequestX(apiRegisterPhoneCode, {
+    onSuccess: ({ data }) => {
       setCount(data.ttl);
       setIsText(true);
-    }
-  })
+    },
+  });
 
-  const apiRegisterReq = useRequestX(apiRegister,{
-    onSuccess: ({data}) => {
-      refresh()
-      handleCancel()
-    }
-  })
+  const apiRegisterReq = useRequestX(apiRegister, {
+    onSuccess: ({ data }) => {
+      refresh();
+      handleCancel();
+    },
+  });
 
   const onRegisterFinish = (values: any) => {
-    apiRegisterReq.run(values)
-  }
+    apiRegisterReq.run(values);
+  };
 
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo);
@@ -60,50 +61,62 @@ const RegisterModal = (props: RegisterModalProps) => {
   return (
     <div className={styles.login_form_container}>
       <div className={styles.login_form}>
-        <Form
+        <LoginForm
+          autoFocusFirstInput
           form={registerForm}
-          {...layout}
-          initialValues={{ remember: true }}
-          onFinish={onRegisterFinish}
-          onFinishFailed={onFinishFailed}
+          className={styles.formContainer}
+          submitter={{
+            searchConfig: { submitText: '注册' },
+            submitButtonProps: {
+              style: {
+                height: 48,
+                width: '100%',
+              },
+            },
+          }}
+          onFinish={async (values: submitParams) => {
+            const { agreement } = values;
+            if (agreement) {
+              onRegisterFinish(values);
+            } else {
+              registerForm.setFieldsValue({ agreement: true });
+              registerForm.validateFields();
+            }
+          }}
         >
-          <Form.Item
-            label=""
-            name="account"
-            rules={[{ required: true, message: '手机号不能为空' }]}
-          >
-            <Input className={styles.name_input} placeholder="手机号" />
-          </Form.Item>
-          <Form.Item
-            label=""
-            name="code"
-            rules={[{ required: true, message: '验证码不能为空' }]}
-          >
-            <div className={styles.msgCode}>
-              <Input className={styles.msg} placeholder="验证码"/>
-              <Button className={styles.msgButton} onClick={(e)=>{
-                apiRegisterPhoneCodeReq.run({
-                  phone: phone,
-                })
-                e.preventDefault()
-              }} disabled={isText}>{isText?count:'发送验证码'}</Button>
-            </div>
-          </Form.Item>
-          <Form.Item
-            label=""
-            name="password"
-            rules={[{ required: true, message: '密码不能为空' }]}
-          >
-            <Input.Password className={styles.password} placeholder="密码" />
-          </Form.Item>
-          <Button className={styles.submit} htmlType="submit">注册</Button>
-        </Form>
-        <div className={styles.switchMode} onClick={()=>{
-          setModeType("login")
-        }}> 快速登录 </div>
+          <MobileCaptchaForm captchaType="register" />
+          <div className={styles.noMargin}>
+            <PasswordForm formType={3} />
+          </div>
+          <div className={styles.checkBox}>
+            <ProFormCheckbox name="agreement">
+              我已阅读并同意
+              <span style={{ color: 'red' }}>《隐私协议》和《使用条款》</span>
+            </ProFormCheckbox>
+          </div>
+        </LoginForm>
+        <div className={styles.loginActions}>
+          {/*<div className={styles.textContainer}>*/}
+          {/*  <div className={styles.github}>*/}
+          {/*    <img className={styles.icon} src={'https://s1.ax1x.com/2022/05/20/Oq4eSI.png'} />*/}
+          {/*    <div className={styles.githubTextContainer}>*/}
+          {/*      <span className={styles.githubText}>Github登录</span>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
+          <span className={styles.actions}>
+            <span
+              onClick={() => {
+                setModeType('login');
+              }}
+            >
+              已有账号？前往登录
+            </span>
+          </span>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default RegisterModal;

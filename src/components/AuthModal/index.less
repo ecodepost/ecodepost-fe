@@ -1,28 +1,27 @@
 .loginCard {
-  margin: 0 auto;
-  background-color: white;
-  padding: 40px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
+  background-color: white;
 
   .login_intro {
     width: 40%;
 
     .title {
-      color: #4f4f4f;
-      font-size: 48px;
-      font-weight: 700;
       margin-bottom: 30px;
+      color: #4f4f4f;
+      font-weight: 700;
+      font-size: 48px;
     }
 
     .sub {
-      font-size: 18px;
       color: #4f4f4f;
+      font-size: 18px;
 
       .register {
-        font-weight: 600;
         color: #4565e8;
+        font-weight: 600;
       }
     }
 
@@ -32,104 +31,131 @@
       margin-top: 60px;
     }
   }
-
-
 }
 
 .login_form_container {
   width: 100%;
-  padding-top: 16px;
+  text-align: center;
 
   .login_form {
-    margin-bottom: 30px;
-  }
-
-  .name_input {
-    padding: 12px 24px;
-    border-radius: 16px;
-    //background-color: #eaeff5;
-    color: #838383;
-  }
-  .msgCode {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    .msg {
-      display: flex;
-      padding: 12px 24px;
-      border-radius: 16px;
-      color: #838383;
-    }
-    .msgButton {
-      display: flex;
-      margin-left: 10px;
-      padding: 12px 24px;
-      border-radius: 16px;
-      height: 46px;
-    }
-  }
-
-  .password {
-    padding: 12px 24px;
-    border-radius: 16px;
-    //background-color: #eaeff5 !important;
-    color: #838383;
-  }
-
-  .forget {
-    text-align: right;
-    color: #838383;
-  }
-
-  .submit {
-    width: 100%;
-    background-color: #946ce6;
-    color: white;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 5px;
-    font-size: 16px;
-    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 10px 10px 1px rgba(69, 101, 232, 0.2);
-    height: auto;
   }
-
-  .divider {
-    font-size: 14px;
-    color: #838383;
-  }
-
-  .other_sign {
+  .formContainer {
     width: 100%;
-    border: 1px solid rgb(217, 217, 217);
-    padding: 12px 24px;
-    border-radius: 16px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    height: auto;
+    margin-top: 30px;
 
-    .icon {
-      color: #57bd6b;
-      font-size: 24px;
-      vertical-align: middle;
+    :global {
+      .ant-input-affix-wrapper {
+        height: 48px;
+        color: #cbd5e0;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(203, 213, 224, 1);
+        border-radius: 8px;
+      }
+
+      .ant-input-prefix {
+        display: none;
+      }
     }
 
-    .github_icon {
-      color: #000000;
-      font-size: 24px;
-      vertical-align: middle;
+    .section {
+      height: 48px;
+      margin-top: 40px;
+      background-color: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(203, 213, 224, 1);
+      border-radius: 8px;
     }
 
-    .title {
+    .changeContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .changeFunc {
+      display: inline-block;
+      width: 70px;
+      height: 22px;
+      margin: 0 0 20px 4px;
+      color: rgba(62, 79, 109, 1);
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+      line-height: 22px;
+      white-space: nowrap;
+      text-align: left;
+      overflow-wrap: break-word;
+      cursor: pointer;
+    }
+  }
+}
+
+.other_sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 48px;
+  margin: auto;
+}
+
+.actions {
+  cursor: pointer;
+}
+
+.forget {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .return {
+    width: 160px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(203, 213, 224, 1);
+    border-radius: 8px;
+    .returnWords {
+      display: block;
+      width: 64px;
+      height: 24px;
+      margin: 0 auto;
+      color: rgba(40, 53, 74, 1);
+      font-size: 16px;
+      font-family: PingFangSC-Medium;
+      line-height: 24px;
+      white-space: nowrap;
       text-align: center;
-      width: 100%;
-      color: #838383;
+      overflow-wrap: break-word;
     }
   }
-  .switchMode {
-    text-align: center;
-    cursor: pointer;
+
+  .confrim {
+    width: 160px;
+    height: 48px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    line-height: 24px;
+    background-color: var(--themeColorPrimary);
+    border-color: var(--themeColorPrimary);
+    border-radius: 8px;
+
+    .confrimWords {
+      display: block;
+      width: 48px;
+      height: 24px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 1);
+      font-size: 16px;
+      font-family: PingFangSC-Medium;
+      line-height: 24px;
+      white-space: nowrap;
+      text-align: center;
+      overflow-wrap: break-word;
+    }
   }
 }

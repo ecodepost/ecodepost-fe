@@ -13,6 +13,12 @@ declare namespace SSOAPI {
     currentAuthority?: string;
   };
 
+  type LoginResult = {
+    code: number;
+    data?: string;
+    msg?: string;
+  };
+
   type PageParams = {
     current?: number;
     pageSize?: number;
@@ -20,7 +26,8 @@ declare namespace SSOAPI {
 
   type Captcha = {
     code?: number;
-    status?: string;
+    data?: any;
+    msg?: string;
   };
 
   type LoginBasicParams = {
